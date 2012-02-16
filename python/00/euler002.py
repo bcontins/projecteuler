@@ -1,3 +1,6 @@
+# By considering the terms in the Fibonacci sequence whose values do
+# not exceed four million, find the sum of the even-valued terms.
+
 from math import sqrt
 
 def fibonacci(n):
@@ -12,12 +15,13 @@ def solve():
     idx = 0
 
     while fib < limit:
+        # Compute each term up to the limit
         fib = fibonacci(idx)
         print ". Fibonacci value = %d" % (fib)
-
+        
+        # Only sum the even-valued terms
         if  fib % 2 == 0:
             result += fib
-            print ". Sum = %d" % (result)
 
         idx += 1
 
