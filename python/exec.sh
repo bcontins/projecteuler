@@ -9,7 +9,7 @@ if [ ! -d $scriptdir/$prob ]; then
     exit 1
 fi
 
-export PYTHONPATH=$scriptdir/common 
+export PYTHONPATH=$scriptdir/
 
 time pypy $scriptdir/$prob/euler$prob.py
 
